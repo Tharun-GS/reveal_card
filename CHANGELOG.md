@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0 - 2022-05-02
 
-* TODO: Describe initial release.
+* Initial release of Reveal Card Widget
