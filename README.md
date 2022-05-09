@@ -1,5 +1,7 @@
 # Reveal Card
 
+![Pub Version](https://img.shields.io/pub/v/reveal_card)
+
 Reveal Card widget helps you to create a card with a title, description, and a background image. Also you can add a button to the card. The card also contains a backside with a title, description and a background image. The card can be revealed up and the backside can be displayed.
 
 ## Sample
