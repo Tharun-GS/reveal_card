@@ -17,7 +17,7 @@ class RevealCard extends StatefulWidget {
     this.revealBackgroundColor,
     this.revealBackgroundImage,
     this.revealOpacity,
-    this.revealDuration = 200,
+    this.revealDuration,
     this.actionButton,
     this.width = 300,
     this.height = 300,
@@ -60,7 +60,7 @@ class RevealCard extends StatefulWidget {
   final double? revealOpacity;
 
   // Duration of the Reveal Animation
-  final int? revealDuration;
+  final Duration? revealDuration;
 
   // Action Button of the Front Card
   final FloatingActionButton? actionButton;
@@ -187,7 +187,7 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                   ),
                   height: revealHeight,
                   width: widget.width,
-                  duration: Duration(milliseconds: widget.revealDuration!),
+                  duration: widget.revealDuration ?? Duration(milliseconds: 200),
                   child: Stack(
                     children: [
                       widget.revealBackgroundImage == null

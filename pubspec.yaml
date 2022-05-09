@@ -1,5 +1,5 @@
 name: reveal_card
-description: Card Widget with a Front Side and a Back Side. Back side will reveal on button click.
+description: Card Widget with a Front Side and a Back Side. The Back side will be revealed with an animation on button click.
 version: 1.0.0
 homepage: https://github.com/Tharun-GS/reveal_card
 
