@@ -75,7 +75,8 @@ class RevealCard extends StatefulWidget {
   State<RevealCard> createState() => _RevealCardState();
 }
 
-class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateMixin {
+class _RevealCardState extends State<RevealCard>
+    with SingleTickerProviderStateMixin {
   // Width of part to be revealed
   double revealWidth = 0;
   // Height of part to be revealed
@@ -101,7 +102,9 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                     )
                   : Container(
                       decoration: widget.backgroundImage == null
-                          ? BoxDecoration(borderRadius: BorderRadius.circular(10), color: widget.backgroundColor ?? Colors.white)
+                          ? BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: widget.backgroundColor ?? Colors.white)
                           : BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               image: DecorationImage(
@@ -146,7 +149,8 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                               IconButton(
                                 onPressed: () {
                                   setState(() {
-                                    revealHeight = revealHeight == 0 ? widget.height! : 0;
+                                    revealHeight =
+                                        revealHeight == 0 ? widget.height! : 0;
                                   });
                                 },
                                 icon: widget.revealIcon ??
@@ -187,7 +191,8 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                   ),
                   height: revealHeight,
                   width: widget.width,
-                  duration: widget.revealDuration ?? Duration(milliseconds: 200),
+                  duration:
+                      widget.revealDuration ?? Duration(milliseconds: 200),
                   child: Stack(
                     children: [
                       widget.revealBackgroundImage == null
@@ -206,7 +211,10 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                               child: Opacity(
                                   opacity: widget.revealOpacity ?? 0.5,
                                   child: Container(
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0), color: Colors.black),
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        color: Colors.black),
                                   )),
                             ),
                       Column(
@@ -216,9 +224,11 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 10.0),
+                                    padding: const EdgeInsets.only(
+                                        left: 15.0, right: 15.0, top: 10.0),
                                     child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         Expanded(
                                           child: widget.revealTitle ??
@@ -248,7 +258,8 @@ class _RevealCardState extends State<RevealCard> with SingleTickerProviderStateM
                                     color: Colors.grey,
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 15.0, vertical: 15.0),
                                     child: Column(
                                       children: widget.revealContent ?? [],
                                     ),

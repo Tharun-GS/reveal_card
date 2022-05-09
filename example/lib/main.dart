@@ -60,7 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Text('Company', style: TextStyle(color: Colors.white, fontSize: 18)),
+                Text('Company',
+                    style: TextStyle(color: Colors.white, fontSize: 18)),
                 Expanded(
                   child: Text(
                     'SAMSUNG',
@@ -76,7 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Text('Price', style: TextStyle(color: Colors.white, fontSize: 18)),
+                Text('Price',
+                    style: TextStyle(color: Colors.white, fontSize: 18)),
                 Expanded(
                   child: Text(
                     '\$ 1349',
@@ -92,7 +94,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Text('Rating', style: TextStyle(color: Colors.white, fontSize: 18)),
+                Text('Rating',
+                    style: TextStyle(color: Colors.white, fontSize: 18)),
                 Expanded(
                   child: Text(
                     '4.6',
