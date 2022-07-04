@@ -23,52 +23,52 @@ class RevealCard extends StatefulWidget {
     this.height = 300,
   }) : super(key: key);
 
-  // Title of the Front Card
+  /// Title of the Front Card
   final Text? title;
 
-  // Icon to Reveal the Back Card
+  /// Icon to Reveal the Back Card
   final Icon? revealIcon;
 
-  // Content of the Front Card
+  /// Content of the Front Card
   final List<Widget>? content;
 
-  // Background Image of the Front Card
+  /// Background Image of the Front Card
   final ImageProvider? backgroundImage;
 
-  // Opacity of the Front Card
+  /// Opacity of the Front Card
   final double? opacity;
 
-  // Background Color of the Front Card
+  /// Background Color of the Front Card
   final Color? backgroundColor;
 
-  // Title of the Back Card
+  /// Title of the Back Card
   final Text? revealTitle;
 
-  // Icon to close the Back Card
+  /// Icon to close the Back Card
   final Icon? revealCloseIcon;
 
-  // Content of the Back Card
+  /// Content of the Back Card
   final List<Widget>? revealContent;
 
-  // Background Color of the Back Card
+  /// Background Color of the Back Card
   final Color? revealBackgroundColor;
 
-  // Background Image of the Back Card
+  /// Background Image of the Back Card
   final ImageProvider? revealBackgroundImage;
 
-  // Opacity of the Back Card
+  /// Opacity of the Back Card
   final double? revealOpacity;
 
-  // Duration of the Reveal Animation
+  /// Duration of the Reveal Animation
   final Duration? revealDuration;
 
-  // Action Button of the Front Card
+  /// Action Button of the Front Card
   final FloatingActionButton? actionButton;
 
-  // Width of the Card
+  /// Width of the Card
   final double? width;
 
-  // Height of the Card
+  /// Height of the Card
   final double? height;
 
   @override
@@ -77,9 +77,10 @@ class RevealCard extends StatefulWidget {
 
 class _RevealCardState extends State<RevealCard>
     with SingleTickerProviderStateMixin {
-  // Width of part to be revealed
+  /// Width of part to be revealed
   double revealWidth = 0;
-  // Height of part to be revealed
+
+  /// Height of part to be revealed
   double revealHeight = 0;
 
   @override

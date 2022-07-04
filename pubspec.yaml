@@ -1,10 +1,10 @@
 name: reveal_card
 description: Card Widget with a Front Side and a Back Side. The Back side will be revealed with an animation on button click.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Tharun-GS/reveal_card
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
